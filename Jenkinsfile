@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/refactory.sh'
+                sh 'cp /usr/local/jenkins-data/workspace/simple-java-maven-app/target/my-app-1.0-SNAPSHOT.jar /root'
             }
         }
     }
