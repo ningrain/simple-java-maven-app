@@ -1,6 +1,5 @@
 pipeline {
-    agent none
-
+    agent any
     stages {
         stage('Build') {
             agent {
@@ -14,7 +13,6 @@ pipeline {
             }
         }
         stage('Deliver') {
-            agent any
             steps {
                 sh './jenkins/scripts/refactory.sh'
             }
