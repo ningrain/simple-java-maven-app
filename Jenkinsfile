@@ -16,8 +16,7 @@ pipeline {
             agent any
             steps {
                 sh 'pwd'
-                sh 'exit'
-                sh 'pwd'
+                sh 'cp ./target/my-app-1.0-SNAPSHOT.jar /var/jenkins_home/haohan/DDoSWeb/jar'
             }
         }
     }
